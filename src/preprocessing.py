@@ -5,13 +5,12 @@ from scipy import stats
 from scipy.stats import zscore
 import matplotlib.pyplot as plt
 import seaborn as sns
-import logging
 
 import matplotlib
 matplotlib.use('Agg')
 
 # Import the logger from src/logging
-from logging import logger
+from logger import logger
 
 def missing_data_summary(data):
     logger.info('Started missing data summary calculation')
@@ -112,6 +111,11 @@ def cap_all_outliers(data, numerical_columns):
 def plot_decile_pie_chart(df, column, decile_column='CompetitionDistance', decile_labels=5, title_prefix="mean"):
     logger.info(f'Started decile-based pie chart creation for {column} grouped by {decile_column}')
     
+    # Drop rows with missing or invalid data
+    df = df.dropna(subset=[column, decile_column]).copy()
+    df.loc[:, column] = pd.to_numeric(df[column], errors='coerce')
+    df.loc[:, decile_column] = pd.to_numeric(df[decile_column], errors='coerce')
+    
     # Adding Decile_rank column to the DataFrame
     df['Decile_rank'] = pd.qcut(df[decile_column], decile_labels, labels=False)
 
@@ -121,14 +125,22 @@ def plot_decile_pie_chart(df, column, decile_column='CompetitionDistance', decil
     # Grouping by Decile_rank and calculating the mean of the selected column
     a = new_df.groupby('Decile_rank').mean()
 
+    # Ensure the resulting DataFrame has valid sizes
+    if a.empty or a[column].isnull().all():
+        logger.warning('No valid data to plot in pie chart.')
+        return None  # Or handle appropriately
+
     # Preparing labels and sizes for the pie chart
     labels = a.index.to_list()
     sizes = a[column].to_list()
 
+    # Dynamically generate the 'explode' array to match the number of deciles
+    explode = [0.03] * len(sizes)
+    explode[0] = 0.1  # Highlight the first slice by exploding it slightly
+
     # Plotting
     fig, ax = plt.subplots(figsize=(10, 7))
     colors = ['gold', 'yellowgreen', 'purple', 'lightcoral', 'lightskyblue']
-    explode = (0.1, 0.03, 0.03, 0.03, 0.03)  # explode 1st slice
 
     # Plot the pie chart
     ax.pie(sizes, explode=explode, labels=labels, colors=colors, shadow=True, autopct='%.2f', startangle=140)
