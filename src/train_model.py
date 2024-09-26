@@ -6,7 +6,7 @@ from utils import evaluate_model
 
 def train_random_forest(train_inputs, train_targets, val_inputs, val_targets):
     # Train the model
-    random_forest_model = RandomForestRegressor(random_state=42, n_jobs=-1)
+    random_forest_model = RandomForestRegressor(random_state=42, n_jobs=-1, n_estimators=10)
     random_forest_model.fit(train_inputs, train_targets)
 
     # Evaluate model
