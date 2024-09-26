@@ -3,6 +3,7 @@ from sklearn.ensemble import RandomForestRegressor
 import joblib
 from datetime import datetime
 from utils import evaluate_model
+import os
 
 def train_random_forest(train_inputs, train_targets, val_inputs, val_targets):
     # Train the model
@@ -11,6 +12,10 @@ def train_random_forest(train_inputs, train_targets, val_inputs, val_targets):
 
     # Evaluate model
     evaluate_model(random_forest_model, train_inputs, train_targets, val_inputs, val_targets)
+
+    # Create the 'models' directory if it doesn't exist
+    if not os.path.exists('../models'):
+        os.makedirs('../models')
 
     # Serialize the model with timestamp
     timestamp = datetime.now().strftime('%d-%m-%Y-%H-%M-%S-%f')
