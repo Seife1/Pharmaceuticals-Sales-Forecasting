@@ -1,0 +1,94 @@
+2024-09-24 13:08:14,482 - INFO - Started missing data summary calculation
+2024-09-24 13:08:14,733 - INFO - Missing data identified in columns: ['CompetitionDistance', 'CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval']
+2024-09-24 13:08:14,735 - INFO - Completed missing data summary calculation
+2024-09-24 13:08:18,374 - INFO - Started outlier boxplot creation for columns: ['Sales', 'Customers', 'CompetitionDistance', 'Promo', 'Promo2', 'Date']
+2024-09-24 13:08:19,780 - INFO - Created box plot for column Sales
+2024-09-24 13:08:20,937 - INFO - Created box plot for column Customers
+2024-09-24 13:08:22,163 - INFO - Created box plot for column CompetitionDistance
+2024-09-24 13:08:23,282 - INFO - Created box plot for column Promo
+2024-09-24 13:08:24,477 - INFO - Created box plot for column Promo2
+2024-09-24 13:08:25,748 - INFO - Created box plot for column Date
+2024-09-24 13:08:25,901 - INFO - Completed boxplot creation
+2024-09-24 13:08:27,270 - INFO - Started capping outliers for columns: ['Sales', 'Customers', 'CompetitionDistance', 'Promo', 'Promo2', 'Date']
+2024-09-24 13:08:27,855 - INFO - Outliers capped for Sales with bounds: -392.5, 13611.5
+2024-09-24 13:08:28,295 - INFO - Outliers capped for Customers with bounds: -42.0, 1454.0
+2024-09-24 13:08:28,640 - INFO - Outliers capped for CompetitionDistance with bounds: -8570.0, 16150.0
+2024-09-24 13:08:29,058 - INFO - Outliers capped for Promo with bounds: -1.5, 2.5
+2024-09-24 13:08:29,485 - INFO - Outliers capped for Promo2 with bounds: -1.5, 2.5
+2024-09-24 13:08:31,940 - INFO - Outliers capped for Date with bounds: 2011-08-24 00:00:00, 2016-12-03 00:00:00
+2024-09-24 13:08:31,940 - INFO - Completed capping of outliers
+2024-09-24 13:08:31,951 - INFO - Started outlier boxplot creation for columns: ['Sales', 'Customers', 'CompetitionDistance', 'Promo', 'Promo2', 'Date']
+2024-09-24 13:08:33,420 - INFO - Created box plot for column Sales
+2024-09-24 13:08:34,718 - INFO - Created box plot for column Customers
+2024-09-24 13:08:36,004 - INFO - Created box plot for column CompetitionDistance
+2024-09-24 13:08:37,151 - INFO - Created box plot for column Promo
+2024-09-24 13:08:38,267 - INFO - Created box plot for column Promo2
+2024-09-24 13:08:39,555 - INFO - Created box plot for column Date
+2024-09-24 13:08:39,741 - INFO - Completed boxplot creation
+2024-09-24 13:08:42,300 - INFO - Started scatter plot creation for Sales vs Customers
+2024-09-24 13:08:44,145 - INFO - Successfully created scatter plot for Sales vs Customers
+2024-09-24 13:09:31,602 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 13:09:32,177 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 13:09:50,616 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 13:09:51,294 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 13:10:10,277 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 13:10:10,874 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 13:11:39,869 - INFO - Started correlation matrix calculation for columns: Index(['Store', 'DayOfWeek', 'Customers', 'Open', 'Promo', 'SchoolHoliday',
+       'CompetitionDistance', 'CompetitionOpenSinceMonth',
+       'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek',
+       'Promo2SinceYear', 'Sales'],
+      dtype='object')
+2024-09-24 13:11:41,119 - INFO - Completed correlation matrix plot
+2024-09-24 13:11:42,240 - INFO - Started decile-based pie chart creation for Sales grouped by CompetitionDistance
+2024-09-24 13:11:42,524 - INFO - Completed pie chart for Sales grouped by CompetitionDistance
+2024-09-24 13:11:42,525 - INFO - Started decile-based pie chart creation for Customers grouped by CompetitionDistance
+2024-09-24 13:11:42,799 - INFO - Completed pie chart for Customers grouped by CompetitionDistance
+2024-09-24 13:11:43,313 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 13:11:43,316 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 15:03:26,243 - INFO - Started missing data summary calculation
+2024-09-24 15:03:26,492 - INFO - Missing data identified in columns: ['CompetitionDistance', 'CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval']
+2024-09-24 15:03:26,494 - INFO - Completed missing data summary calculation
+2024-09-24 15:03:46,833 - INFO - Started outlier boxplot creation for columns: ['Sales', 'Customers', 'CompetitionDistance', 'Promo', 'Promo2', 'Date']
+2024-09-24 15:03:48,417 - INFO - Created box plot for column Sales
+2024-09-24 15:03:49,600 - INFO - Created box plot for column Customers
+2024-09-24 15:03:50,839 - INFO - Created box plot for column CompetitionDistance
+2024-09-24 15:03:51,993 - INFO - Created box plot for column Promo
+2024-09-24 15:03:53,144 - INFO - Created box plot for column Promo2
+2024-09-24 15:03:54,383 - INFO - Created box plot for column Date
+2024-09-24 15:03:54,547 - INFO - Completed boxplot creation
+2024-09-24 15:03:56,096 - INFO - Started capping outliers for columns: ['Sales', 'Customers', 'CompetitionDistance', 'Promo', 'Promo2', 'Date']
+2024-09-24 15:03:56,692 - INFO - Outliers capped for Sales with bounds: -392.5, 13611.5
+2024-09-24 15:03:57,175 - INFO - Outliers capped for Customers with bounds: -42.0, 1454.0
+2024-09-24 15:03:57,495 - INFO - Outliers capped for CompetitionDistance with bounds: -8570.0, 16150.0
+2024-09-24 15:03:57,921 - INFO - Outliers capped for Promo with bounds: -1.5, 2.5
+2024-09-24 15:03:58,355 - INFO - Outliers capped for Promo2 with bounds: -1.5, 2.5
+2024-09-24 15:04:00,905 - INFO - Outliers capped for Date with bounds: 2011-08-24 00:00:00, 2016-12-03 00:00:00
+2024-09-24 15:04:00,905 - INFO - Completed capping of outliers
+2024-09-24 15:04:00,916 - INFO - Started outlier boxplot creation for columns: ['Sales', 'Customers', 'CompetitionDistance', 'Promo', 'Promo2', 'Date']
+2024-09-24 15:04:02,358 - INFO - Created box plot for column Sales
+2024-09-24 15:04:03,579 - INFO - Created box plot for column Customers
+2024-09-24 15:04:04,892 - INFO - Created box plot for column CompetitionDistance
+2024-09-24 15:04:06,017 - INFO - Created box plot for column Promo
+2024-09-24 15:04:07,167 - INFO - Created box plot for column Promo2
+2024-09-24 15:04:08,477 - INFO - Created box plot for column Date
+2024-09-24 15:04:08,636 - INFO - Completed boxplot creation
+2024-09-24 15:04:11,285 - INFO - Started scatter plot creation for Sales vs Customers
+2024-09-24 15:04:13,032 - INFO - Successfully created scatter plot for Sales vs Customers
+2024-09-24 15:04:55,680 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 15:04:56,232 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 15:05:13,000 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 15:05:13,551 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 15:05:29,996 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 15:05:30,655 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 15:06:37,699 - INFO - Started correlation matrix calculation for columns: Index(['Store', 'DayOfWeek', 'Customers', 'Open', 'Promo', 'SchoolHoliday',
+       'CompetitionDistance', 'CompetitionOpenSinceMonth',
+       'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek',
+       'Promo2SinceYear', 'Sales'],
+      dtype='object')
+2024-09-24 15:06:38,660 - INFO - Completed correlation matrix plot
+2024-09-24 15:06:39,308 - INFO - Started decile-based pie chart creation for Sales grouped by CompetitionDistance
+2024-09-24 15:06:39,737 - INFO - Completed pie chart for Sales grouped by CompetitionDistance
+2024-09-24 15:06:39,751 - INFO - Started decile-based pie chart creation for Customers grouped by CompetitionDistance
+2024-09-24 15:06:40,053 - INFO - Completed pie chart for Customers grouped by CompetitionDistance
+2024-09-24 15:06:40,377 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-24 15:06:40,380 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
