@@ -49,6 +49,7 @@ project-root/
 │   ├── requirements.txt         # API dependencies
 │
 └── README.md                    # Project documentation
+```
 
 ## Installation and Setup
 - Step 1: Clone the repository
